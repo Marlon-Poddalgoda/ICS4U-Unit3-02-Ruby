@@ -9,7 +9,7 @@
 # frozen_string_literal: true
 
 
-def factorialFunc(userNum)
+def factorial_func(userNum)
     # uses recursion to calculate factorial
 
     # check if number is 1, 0 or above
@@ -21,7 +21,7 @@ def factorialFunc(userNum)
         return 1
     else
         # factorial recursion
-        return (userNum * factorialFunc(userNum - 1))
+        return (userNum * factorial_func(userNum - 1))
     end
 end
 
@@ -41,7 +41,7 @@ begin
             next
         else
             # call function
-            factorialInt = factorialFunc(userInput)
+            factorialInt = factorial_func(userInput)
             break
         end
     end
